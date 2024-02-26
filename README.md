@@ -20,7 +20,7 @@ https://raceswebapi.onrender.com/api/races/season/2021
 https://raceswebapi.onrender.com/api/races/season/2020/2022
 https://raceswebapi.onrender.com/api/races/season/2022/4
 https://raceswebapi.onrender.com/api/races/circuits/monza
-https://raceswebapi.onrender.com/api/races/circuits/monza/season/2015/2022
+https://raceswebapi.onrender.com/api/races/circuits/monza/seasons/2015/2022
 https://raceswebapi.onrender.com/api/results/1106
 https://raceswebapi.onrender.com/api/results/driver/max_verstappen
 https://raceswebapi.onrender.com/api/results/driver/connolly
