@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.7",
+    "express": "^4.18.2"
+  },
+  "name": "raceswebapi",
+  "description": "",
+  "version": "1.0.0",
+  "main": "f1Assignment.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DyinToLive/RacesWebAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DyinToLive/RacesWebAPI/issues"
+  },
+  "homepage": "https://github.com/DyinToLive/RacesWebAPI#readme"
+}
