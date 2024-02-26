@@ -2,16 +2,13 @@
 const express = require('express');
 const { createClient } = require('@supabase/supabase-js');
 
-const supabaseUrl = 'https://wtxiypcrzogjbgijwurz.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind0eGl5cGNyem9namJnaWp3dXJ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NTE0OTYsImV4cCI6MjAyMzMyNzQ5Nn0.nCFrr5Lrqo9T658aS35gLGuVrNICEJ-3C__9sRJeGtQ';
-
 const supabase = createClient(supabaseUrl, supabaseKey);
 const app = express();
 const PORT = 8080;
 
 // Route that returns the seasons supported by the API (that is, all the
 // data in the seasons table).
-app.get('https://raceswebapi.onrender.com/api/seasons', async (req, res) => { 
+app.get('api/seasons', async (req, res) => { 
     const {data, error} = await supabase 
     .from('seasons') 
     .select(`*`) 
