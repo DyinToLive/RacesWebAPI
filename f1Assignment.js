@@ -8,7 +8,7 @@ const PORT = 8080;
 
 // Route that returns the seasons supported by the API (that is, all the
 // data in the seasons table).
-app.get('api/seasons', async (req, res) => { 
+app.get('/api/seasons', async (req, res) => { 
     const {data, error} = await supabase 
     .from('seasons') 
     .select(`*`) 
