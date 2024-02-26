@@ -131,7 +131,7 @@ app.get('/api/drivers', async (req, res) => {
 
 // Route that returns referenced driver using the driversRef field.
 app.get('/api/drivers/:ref', async (req, res) => {
-    const driverName = toLowerCase(req.params.ref);
+    const driverName = req.params.ref.toLowerCase();
     const {data, error} = await supabase 
     .from('drivers') 
     .select(`*`) 
