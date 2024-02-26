@@ -1,7 +1,8 @@
 
 const express = require('express');
 const { createClient } = require('@supabase/supabase-js');
-
+const supabaseUrl = process.env.supabaseUrl;
+const supabaseKey = process.env.supabaseKey;
 const supabase = createClient(supabaseUrl, supabaseKey);
 const app = express();
 const PORT = 8080;
