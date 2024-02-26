@@ -130,11 +130,12 @@ app.get('/api/drivers', async (req, res) => {
 });
 
 // Route that returns referenced driver using the driversRef field.
-app.get('/api/drivers/:ref', async (req, res) => { 
+app.get('/api/drivers/:ref', async (req, res) => {
+    const driverName = toLowerCase(req.params.ref);
     const {data, error} = await supabase 
     .from('drivers') 
     .select(`*`) 
-    .eq('driverRef', req.params.ref)
+    .eq('driverRef', driverName)
     if (error) {
         return res.status(500).json({ error: 'Internal Server Error' });
     }
